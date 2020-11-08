@@ -214,9 +214,11 @@ h2 {
 }
 
 #description {
-    font-size: 20px;
-    padding: .5em;
+    font-size: 1.5rem;
+    padding: .5rem;
     font-style: italic;
+    border-bottom: 1px solid black;
+    margin-bottom: 3%;
 }
 
 ::-webkit-scrollbar {
