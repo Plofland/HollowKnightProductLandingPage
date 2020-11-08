@@ -1,0 +1,266 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Styling */
+* {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Trajan;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c261afbb-1184-467a-afaf-f412e9368190/dcx5nyf-b904847d-cdf8-4138-9c83-a9a62900d2cf.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYzI2MWFmYmItMTE4NC00NjdhLWFmYWYtZjQxMmU5MzY4MTkwXC9kY3g1bnlmLWI5MDQ4NDdkLWNkZjgtNDEzOC05YzgzLWE5YTYyOTAwZDJjZi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.oAV_bVTJDqQVyTdQcsFXG8tyWbXl9P4pb83brc9CLFQ);
+    background-color: #13223f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: sticky;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+header {
+    position: fixed;
+    background-image: linear-gradient(rgba(5, 10, 23, 1), rgba(19, 34, 63, 1), rgba(26, 62, 105, .8), rgba(26, 62, 105, .5), rgba(26, 62, 105, .05));
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+}
+
+@media (max-width: 600px) { /*I'm only putting in one @media to satisfy the freecodecamp.org test but I should be including WAY more @media's to make this product landing page mobile friendly*/
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+#video {
+    margin-top: 100px;
+    border:10px solid black;
+    border-radius: 10px;
+}
+
+nav /*> ul*/ {
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    font-size: 18px;
+    list-style: none;
+}
+
+#nav-bar {
+    display: flex;
+
+}
+.nav-link {
+
+}
+/*.nav-link {
+    width: 90vw; (older way of doing the links before I moved the nav-link class down to each of the links instead of the nav)
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}*/
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+#what-are-charms {
+    background: rgba(80, 80, 165, 0.8);
+    text-align: center;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 3% 4%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#what-are-charms p {
+    padding: 2%;
+    color: rgb(133, 133, 133);
+    text-shadow: 1px 2px black;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1%;
+}
+@media (max-width: 600px) {/*Why can't I get the elements (the charm boxes) in this flexbox to wrap when the width of the screen gets smaller than 600px?*/
+    .flexbox-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#charm-header { /*header for each of the 3 sections of Charms */
+    width: 100%;
+    color: #ffffff;
+    background-color: rgba(0,0,75,0.7);
+    margin: 0 0 0 0;
+    padding: 0.5em 0 0.5em 0;
+    border-radius: 1rem 1rem 0 0;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 0.3px;
+}
+
+.charm-container {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(70,70,145,0.7);
+    border-radius: 1em;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.charm:hover {/*Hover over the Charm img to scale it up*/
+    z-index: 0;
+    transform: scale(1.5);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cost {
+    position: absolute; /*HERE is the source of the charm overlay issue, probably*/
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    border-radius: 70%;
+    color: #ffffff;
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.img-blur {
+    backdrop-filter: blur(2px);
+}
+
+
+.cost:hover {
+    opacity: 1;
+}
+
+#description {
+    font-size: 20px;
+    padding: .5em;
+    font-style: italic;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgba(88, 88, 170));
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, rgb(255, 255, 255))
+    
+}
+
+#email {
+    border: 2px solid black;
+    border-radius: 1em;
+}
+  
+form {
+    text-align: center;
+    padding: 2em;
+    background-color: rgba(80, 80, 165, 0.8);
+    margin: 2em 25%;
+    border-radius: 1em;
+}
+
+#submit { 
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: #aa8158;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #eeb47a;
+    transition: background-color .5s;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: .25em;    
+    background-color: rgba(70,70,145,0.7);
+}
