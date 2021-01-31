@@ -19,6 +19,8 @@ Modelled off of [these](https://www.freecodecamp.org/learn/responsive-web-design
 - [] Make it so that the background image scrolls with page
   (background-attachment: scroll (the default)) but becomes fixed when we reach the bottom of the background image
 
+- [] NavBar Links have a hover effect
+
 ###Responsiveness
 
 - [] Make it so that the nav links will scale down when the window is scaled down
@@ -34,3 +36,5 @@ Modelled off of [these](https://www.freecodecamp.org/learn/responsive-web-design
 - [] change the nav header from fixed to normal when window is sized down
 
 - [] get the form section centered for when the window is sized down
+
+- [] turn off navBar hover affect for tablet size or smaller
