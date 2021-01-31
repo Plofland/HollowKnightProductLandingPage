@@ -256,17 +256,6 @@ h2 {
   font-size: 18px;
 }
 
-.charm:hover {
-  /*Hover over the Charm img to scale it up*/
-  z-index: 0;
-  transform: scale(1.5);
-  overflow: hidden;
-  transition: 0.5s;
-  .cost {
-    display: flex;
-  }
-}
-
 .description {
   font-size: 1.2rem;
   padding: 0.5rem;
@@ -275,26 +264,41 @@ h2 {
   margin-bottom: 3%;
 }
 
+.charm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charm:hover {
+  /*Hover over the Charm img to scale it up*/
+  transform: scale(1.5);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.charm:hover .cost {
+  display: inline-block;
+  transition: 1s;
+}
 .cost {
-  top: 0;
-  left: 25%;
-  width: 50%;
-  height: 100%;
+  display: none;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 70%;
+  border-radius: 50%;
   color: #ffffff;
   font-size: 1em;
-  display: none;
-  transition: opacity 0.25s;
+  position: absolute;
 }
 
 .img-blur {
   backdrop-filter: blur(2px);
+  padding: 15%;
+  /* responsive padding: change this to a lower value when on a big screen */
 }
 
-/* .charm:hover {
+.charm:hover {
   opacity: 1;
-} */
+}
 
 ::-webkit-scrollbar {
   width: 12px;
